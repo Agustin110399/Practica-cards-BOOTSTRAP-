@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Practica Bootstrap Comisión 22563</title>
 </head>
 
@@ -14,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Codo a Codo 4.0</a>
+          <a class="navbar-brand" href="https://buenosaires.gob.ar/educacion/codo-codo">Codo a Codo 4.0</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -41,12 +42,12 @@
 <body>
 
   <!-- Contenedor de cards-->
-  <div class="row mt-4 p-5">
+  <div class="row mt-4 pt-5 px-3">
 
     <!-- Card HTML-->
     <div class="col-sm-4">
       <div class="card" width="800px" height="800px">
-        <img src="img/HTML.jpg" class="card-img-top" alt="Imagen HTML 5" width="400px" height="400px">
+        <img src="img/HTML.jpg" class="card-img-top" alt="Imagen HTML 5">
         <div class="card-body" >
           <h5 class="card-title">HMLT5</h5>
           <p class="card-text">HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcado de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros. Es un estándar a cargo del World Wide Web Consortium (W3C) o Consorcio WWW, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación.</p>
@@ -60,7 +61,7 @@
     <!-- Card CSS-->
     <div class="col-sm-4">
       <div class="card">
-        <img src="img/CSS.jpg" class="card-img-top" alt="Imagen CSS3" width="400px" height="400px">
+        <img src="img/CSS.jpg" class="card-img-top" alt="Imagen CSS3">
         <div class="card-body">
           <h5 class="card-title">CSS3</h5>
           <p class="card-text">CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Es muy usado para establecer el diseño visual de los documentos web, e interfaces de usuario escritas en HTML o XHTML; el lenguaje puede ser aplicado a cualquier documento XML, incluyendo XHTML, SVG, XUL, RSS, etcétera. Junto con HTML y JavaScript, CSS es una tecnología usada por muchos sitios web para crear páginas visualmente atractivas, interfaces de usuario para aplicaciones web y GUIs para muchas aplicaciones móviles (como Firefox OS).
@@ -75,7 +76,7 @@
     <!-- Card BOOTSTRAP-->
     <div class="col-sm-4">
       <div class="card">
-        <img src="img/BOOTSTRAP.jpg" class="card-img-top" alt="Imagen BOOTSTRAP 5" width="400px" height="400px">
+        <img src="img/BOOTSTRAP.jpg" class="card-img-top" alt="Imagen BOOTSTRAP 5">
         <div class="card-body">
           <h5 class="card-title">BOOSTRAP</h5>
           <p class="card-text">Bootstrap es una biblioteca multiplataforma o conjunto de herramientas de código abierto para diseño de sitios y aplicaciones web. Contiene plantillas de diseño con tipografía, formularios, botones, cuadros, menús de navegación y otros elementos de diseño basado en HTML y CSS, así como extensiones de JavaScript adicionales. A diferencia de muchos frameworks web, solo se ocupa del desarrollo front-end.</p>
@@ -88,7 +89,23 @@
 
   </div>
 
-
+  <!-- Formulario BOOTSTRAP-->
+  <form class="mt-4 pt-5 px-3">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="CodoACodo22563@gmail.com">
+      <div id="emailHelp" class="form-text">Nunca comparta su email con alguien que desconozaca</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Verificar</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
 
     
 
